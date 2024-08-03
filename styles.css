@@ -228,7 +228,7 @@ body > main > section:nth-child(2) .container{
 }
 main:nth-child(2) p:nth-child(2){
     text-transform: uppercase;
-    font-size: clamp(21px, 1.5vw + 1rem, 100px);
+    font-size: clamp(17px, 1.5vw + 0.8rem, 100px)
 }
 .slick-slide {
 	transform: scale(0.8);
