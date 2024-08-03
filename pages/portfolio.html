@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Responsive Navbar</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Abril+Fatface"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="home-page">
+        <header>
+            <p class="logo">Logo</p>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <ul class="nav__links">
+                <li><a class="active" href="/">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </header>
+        <main>
+            <section>
+                <div class="container">
+                    <h1>great interior design</h1>
+                    <p>a home that's right for you</p>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <h2>discover all interior design projects</h2>
+                    <div class="slider">
+                        <div><img src="images/bathroom-white.webp" alt="Image 1"></div>
+                        <div><img src="images/cottage-old.jpg" alt="Image 2"></div>
+                        <div><img src="images/hallway-old.jpg" alt="Image 3"></div>
+                        <div><img src="images/kitchen-modern.jpg" alt="Image 4"></div>
+                    </div>
+                    <button>free quote form</button>
+                    <p>lets design your home today</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </footer>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".slider").slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            speed: 500,
+            autoplaySpeed: 4000,
+            infinite: true,
+            autoplay: false,
+            centerMode: true,
+            centerPadding: "0",
+            dots: true,
+            responsive: [{
+                breakpoint: 800,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '110px',
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    dots: false,
+                    adaptiveHeight: true               
+                 }
+            }]
+
+        });
+
+    });
+</script>
+    </body>
+</html>

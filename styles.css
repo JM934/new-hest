@@ -1,0 +1,353 @@
+/*css reset*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+.p-center{
+    text-align: center;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  line-height: 1.5;
+  margin: 0; /* Added to reset default margin */
+  padding: 0; /* Added to reset default padding */
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+  text-align: center;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li, a, button, .logo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
+
+#click {
+  display: none;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
+  filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.2));
+  background-color: white;
+  z-index: 1;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover, .active {
+  color: #0088A9;
+}
+
+button {
+  padding-top: 9px;
+  display: block;
+  padding-bottom: 9px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  text-transform: capitalize;
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+button + p {
+    font-family: "Montserrat", sans-serif;
+    text-transform: capitalize;
+    font-weight: 100;
+    font-size: clamp(15px, 0.6vw + 1rem, 100px);
+  }
+
+.logo {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.menu-btn {
+  color: black;
+  display: none;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+
+
+.bottom-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+
+
+body > main > section:nth-child(1) .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff57;
+    backdrop-filter: blur(8px);
+    line-height: 1;
+}
+
+body > main > section:nth-child(1) > div{
+  padding-top: 40px;
+  padding-bottom: 30px;
+  /*background-color: rgb(255, 0, 0);*/
+  border-radius: 0px 0px 100px 100px;
+}
+
+h1 {
+  font-family: 'Abril Fatface', Arial;
+  font-size: clamp(30px, 4.5vw + 1rem, 100px);
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+h2{
+    font-family: "Montserrat", sans-serif;
+    text-transform: capitalize;
+    font-weight: 100;
+    font-size: clamp(15px, 0.6vw + 1rem, 100px);
+    line-height: 3;
+
+}
+body > main > section:nth-child(1){
+    height: calc(100svh - 87px);
+    background-image: url(images/raheny-park-lusk-house.webp);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+body > main > section:nth-child(2) .container{
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: beige;
+    margin: 0;
+    padding: 0;
+}
+main:nth-child(2) p:nth-child(2){
+    text-transform: uppercase;
+    font-size: clamp(23px, 1.5vw + 1rem, 100px);
+}
+.slick-slide {
+	transform: scale(0.8);
+	transition: all 0.4s ease-in-out;
+	padding: 40px 0;
+}
+
+.slick-slide img {
+    width: 100%;
+    height:100%;
+    transition: all 0.4s ease-in-out;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.slick-center {
+	transform: scale(1.05);
+}
+.slick-next{
+    right: 15px;
+}
+.slick-prev{
+    left: 15px;
+}
+
+@media (max-width: 50em) {
+
+    body > main > section:nth-child(1) > .container {
+        padding-top: 20px;
+        border-radius: 0px 0px 50px 50px;
+      }
+      
+      body > main > section:nth-child(1) {
+        background-image: url(images/raheny-park-lusk-house.webp);
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+        border-radius: 0px 0px 200px 200px;
+        height: 43svh;
+      }
+
+      header{
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+    
+      .nav__links {
+        position: fixed;
+        top: 55px;
+        left: -100%;
+        background-color: white;
+        height: calc(100vh - 55px);
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+      }
+    
+      .cta {
+        display: inline-flex;
+        position: fixed;
+        bottom: 80px;
+        width: 100vw;
+        left: -100;
+        justify-content: center;
+        transition: all 0.3s ease;
+      }
+    
+      #click:not(:checked) ~ .nav__links{
+        left: -100%;
+      }
+    
+      #click:not(:checked) ~ .cta{
+        left: -100%;
+      }
+    
+      #click:checked ~ .nav__links {
+        left: 0%;
+      }
+    
+      #click:checked ~ .cta{
+        left: 0%;
+      }
+    
+      #click:checked ~ .menu-btn i:before {
+        content: "\f00d";
+      }
+    
+      .nav__links li {
+        display: block;
+        margin-top: 40px;
+      }
+    
+      .menu-btn {
+        display: inline-block;
+      }
+      .slick-slide {
+        transform: scale(1.5);
+        transition: all 0.4s ease-in-out;
+        padding-block: clamp(1rem, 80px, 80px);
+        padding-inline: 20px;
+    }
+      
+      .slick-center {
+        transform: scale(2.5);
+        position: relative;
+        z-index: 1;
+      } 
+
+      .slick-active, .slick-cloned {
+        opacity: 0.5;
+    }
+    
+      .slick-center {
+        opacity: 1; /* Ensure center slide is fully opaque */
+    }
+    
+
+        
+}
