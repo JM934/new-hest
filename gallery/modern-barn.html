@@ -12,7 +12,7 @@
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Abril+Fatface"/>
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="../styles.css">
     </head>
     <body class="home-page">
         <header>
@@ -30,23 +30,26 @@
             </ul>
         </header>
         <main>
-            <section>
-                <div class="container">
-                    <h1>great interior design</h1>
-                    <p>a home that's right for you</p>
+            <h1>Modern Barn</h1>
+            <section class="gallery-container">
+                <div class="active-picture">
+                    <img src="../images/barn-conversion/modern-barn-1.webp" alt="" width="">
+                </div>
+                <div class="gallery-pictures">
+                    <img src="../images/barn-conversion/modern-barn-1.webp" alt="pic-1" width="">
+                    <img src="../images/barn-conversion/modern-barn-2.webp" alt="pic-2" width="">
+                    <img src="../images/barn-conversion/modern-barn-3.webp" alt="pic-3" width="">
+                    <img src="../images/barn-conversion/modern-barn-3.webp" alt="pic-4" width="">
+
                 </div>
             </section>
             <section>
-                <div class="container">
-                    <h2>discover all interior design projects</h2>
-                    <div class="slider">
-                        <div><img src="images/bathroom-white.webp" alt="Image 1"></div>
-                        <div><img src="images/cottage-old.jpg" alt="Image 2"></div>
-                        <div><img src="images/hallway-old.jpg" alt="Image 3"></div>
-                        <div><img src="images/kitchen-modern.jpg" alt="Image 4"></div>
-                    </div>
-                    <button>free quote form</button>
-                    <p>lets design your home today</p>
+                <h2>Discover all interior design projects</h2>
+                <div class="gallery-slider">
+                    <div><img src="../images/bathroom-white.webp" alt="Image 1"></div>
+                    <div><img src="../images/bedroom_View01.webp" alt="Image 2"></div>
+                    <div><img src="../images/cottage-old.jpg" alt="Image 3"></div>
+                    <div><img src="../images/hallway-old.jpg" alt="Image 4"></div>
                 </div>
             </section>
         </main>
@@ -58,7 +61,7 @@
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
-        $(".slider").slick({
+        $(".gallery-slider").slick({
             infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,
@@ -95,6 +98,34 @@
         });
 
     });
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const gallery = document.querySelector('.gallery-pictures');
+    const activePicture = document.querySelector('.active-picture img');
+
+    gallery.addEventListener('click', function(event) {
+        if (event.target.tagName === 'IMG') {
+            // Add fade-out class
+            activePicture.classList.add('fade-out');
+            
+            // Wait for transition to complete before changing the image
+            setTimeout(() => {
+                activePicture.src = event.target.src;
+                activePicture.alt = event.target.alt;
+                
+                // Remove fade-out and add fade-in class
+                activePicture.classList.remove('fade-out');
+                activePicture.classList.add('fade-in');
+                
+                // Remove fade-in class after transition completes
+                setTimeout(() => {
+                    activePicture.classList.remove('fade-in');
+                }, 300);
+            }, 300);
+        }
+    });
+});
 </script>
     </body>
 </html>
