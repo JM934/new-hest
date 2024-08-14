@@ -214,7 +214,7 @@ button + p {
     background-color: #ffffff57;
     backdrop-filter: blur(8px);
     line-height: 1;
-    padding-top: 40px;
+    padding-top: 35px;
     padding-bottom: 30px;
     border-radius: 0px 0px 100px 100px;
 }
@@ -339,6 +339,10 @@ main:nth-child(2) p:nth-child(2){
       header{
         padding-top: 15px;
         padding-bottom: 15px;
+      }
+
+      .heading-blur {
+        border-radius: 0px 0px 60px 60px;
       }
     
       .nav__links {
