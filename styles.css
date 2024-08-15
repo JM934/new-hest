@@ -413,7 +413,8 @@ main:nth-child(2) p:nth-child(2){
         padding-block: clamp(1rem, 80px, 80px);
         padding-inline: 20px;
     }
-      
+
+
       .slick-center {
         transform: scale(2.5);
         position: relative;
@@ -423,11 +424,26 @@ main:nth-child(2) p:nth-child(2){
       .slick-active, .slick-cloned {
         opacity: 0.5;
     }
+
     
       .slick-center {
         opacity: 1; /* Ensure center slide is fully opaque */
     }
+
+    /* .slick-track{ */
+        /* width: max(1440px) !important; */
+    /* } */
     
 
         
+}
+
+@media (min-width: 360px) {
+    .slider{ margin-block: 1rem;}
+}
+
+@media (min-width: 420px) {
+    .slick-center{ 
+        transform: scale(2);
+    }
 }
