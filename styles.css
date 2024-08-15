@@ -354,7 +354,8 @@ main:nth-child(2) p:nth-child(2){
 
       .heading-blur {
         border-radius: 0px 0px 60px 60px;
-        padding-top: 25px;
+        padding-top: 15px;
+        padding-bottom: 25px;
       }
     
       .nav__links {
@@ -429,20 +430,14 @@ main:nth-child(2) p:nth-child(2){
       .slick-center {
         opacity: 1; /* Ensure center slide is fully opaque */
     }
-
-    /* .slick-track{ */
-        /* width: max(1440px) !important; */
-    /* } */
-    
-
         
 }
 
-@media (min-width: 360px) {
+@media (min-width: 360px) and (max-width: 419px){
     .slider{ margin-block: 1rem;}
 }
 
-@media (min-width: 420px) {
+@media(min-width: 420px) and (max-width: 799px){
     .slick-center{ 
         transform: scale(2);
     }
