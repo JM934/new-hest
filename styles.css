@@ -234,7 +234,7 @@ h2{
     font-family: "Montserrat", sans-serif;
     text-transform: capitalize;
     font-weight: 100;
-    font-size: clamp(15px, 0.6vw + 1rem, 100px);
+    font-size: clamp(0.4rem, 1.5vw + 0.6rem, 6rem);
     line-height: 3;
 
 }
@@ -287,6 +287,9 @@ main:nth-child(2) p:nth-child(2){
 	transform: scale(0.8);
 	transition: all 0.4s ease-in-out;
 	padding: 40px 0;
+}
+.slick-slider {
+    top: -1.6rem;
 }
 
 .slick-slide img {
