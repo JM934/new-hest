@@ -226,7 +226,7 @@ button + p {
 h1 {
   font-family: baskerville, serif;
   font-size: clamp(30px, 4.5vw + 1rem, 100px);
-  font-weight: 400;
+  font-weight: bold;
   text-transform: capitalize;
 }
 
