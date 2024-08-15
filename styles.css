@@ -224,7 +224,7 @@ button + p {
 } */
 
 h1 {
-  font-family: 'Abril Fatface', Arial;
+  font-family: baskerville, serif;
   font-size: clamp(30px, 4.5vw + 1rem, 100px);
   font-weight: 400;
   text-transform: capitalize;
@@ -320,13 +320,6 @@ main:nth-child(2) p:nth-child(2){
 }
 
 @media (max-width: 50em) {
-
-    h1 {
-        font-family: 'Abril Fatface', Arial;
-        font-size: clamp(30px, 4.5vw + 1rem, 100px);
-        font-weight: 400;
-        text-transform: capitalize;
-      }
 
     body > main > section:nth-child(1) > .container {
         padding-top: 20px;
