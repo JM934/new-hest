@@ -163,29 +163,30 @@ header {
 }
 
 button {
-  padding-top: 9px;
-  display: block;
-  padding-bottom: 9px;
-  margin: auto;
-  padding-left: 25px;
-  padding-right: 25px;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  text-transform: capitalize;
+    position: relative;
+    padding: 9px 45px 9px 45px;
+    display: block;
+    margin: auto;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    text-transform: capitalize;
+    top: -2.5rem;
 }
 
 button:hover {
   background-color: rgba(0, 136, 169, 0.8);
 }
 button + p {
+    position: relative;
     font-family: "Montserrat", sans-serif;
     text-transform: capitalize;
     font-weight: 100;
-    font-size: clamp(15px, 0.6vw + 1rem, 100px);
+    font-size: clamp(0.4rem, 1.5vw + 0.6rem, 6rem);
+    top: -2rem;
   }
 
 .logo {
@@ -233,7 +234,6 @@ h1 {
 h2{
     font-family: "Montserrat", sans-serif;
     text-transform: capitalize;
-    font-weight: 100;
     font-size: clamp(0.4rem, 1.5vw + 0.6rem, 6rem);
     line-height: 3;
 
