@@ -31,9 +31,12 @@ ol[role='list'] {
 
 /* Set core body defaults */
 body {
-  line-height: 1.5;
-  margin: 0; /* Added to reset default margin */
-  padding: 0; /* Added to reset default padding */
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    min-height: 100svh;
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -220,6 +223,10 @@ button + p {
     border-radius: 0px 0px 100px 100px;
 }
 
+main{
+    flex-grow: 1;
+}
+
 /* body > main > section:nth-child(1) > div{
 
 } */
@@ -320,6 +327,11 @@ main:nth-child(2) p:nth-child(2){
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+footer {
+    height: 100%;
+    background-color: red;
 }
 
 @media (max-width: 50em) {
