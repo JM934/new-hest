@@ -269,7 +269,7 @@ body > main > section:nth-child(2) .container{
 main:nth-child(2) p:nth-child(2){
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
-    font-size: clamp(15px, 6.5vw + -1.2rem, 2.0rem);
+    font-size: clamp(16px, 6.5vw + -1.2rem, 2.0rem);
 }
 
 .gallery-container {
