@@ -7,6 +7,18 @@
     margin-bottom: -3rem;
 }
 
+.portfolio-slider .portfolio-item{
+    display: none;
+}
+
+.portfolio-slider .portfolio-item:first-child{
+    display: block;
+}
+
+.portfolio-slider.slick-initialized .portfolio-item {
+    display: block;
+  }
+
 .slick-prev {
     left: -1rem;
     background-color: black;
