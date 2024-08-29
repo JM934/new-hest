@@ -8,11 +8,15 @@
 }
 
 .portfolio-slider {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease;
+    -webkit-transition: opacity 1s ease;
 }
 
 .portfolio-slider.slick-initialized {
-    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 
