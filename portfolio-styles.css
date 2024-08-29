@@ -7,6 +7,15 @@
     margin-bottom: -3rem;
 }
 
+.portfolio-slider {
+    display: none;
+}
+
+.portfolio-slider.slick-initialized {
+    display: block;
+}
+
+
 .portfolio-slider .portfolio-item{
     display: none;
 }
